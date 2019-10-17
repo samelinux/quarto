@@ -14,6 +14,12 @@ This is a game for two players. The board has 16 squares (4x4), and 16 different
 * Hole (piece with hole/piece without hole)
 
 For our 2D version we use ringed/unringed instaed of big/small just to, hopefully, ease pieces characteristics differentiation.
+So, in this version of Quarto the four pieces characteristics are:
+
+* Ring (ringed/unringed)
+* Colour (dark/light)
+* Shape (circle/square)
+* Hole (piece with hole/piece without hole)
 
 ## Objective
 
@@ -38,6 +44,6 @@ The game finishes in a draw when nobody reaches the objective after placing the 
 ## UI/UX
 
 To choose a piece, just click it and let the other player place it.
-This versione of quarto has no coded rules [as of 17/Oct/2019] so you can choose a piece that's already on the board and move it to another square.
+This versione of Quarto has no coded rules [as of 17/Oct/2019] so you can choose a piece that's already on the board and move it to another square.
 It's basically an hotseat game that you can easly play on a cellphone, maybe i'll add player and rules handling in the next future.
 
