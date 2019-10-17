@@ -13,87 +13,87 @@ class Game
 
   x=(i%4)*50+(i%4);
   y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(10+x,214+y,50,50,this.imagePath+"bce.png"));
+  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"bce.png"));
   i++;
   x=(i%4)*50+(i%4);
   y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(10+x,214+y,50,50,this.imagePath+"bcer.png"));
+  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"bcer.png"));
   i++;
   x=(i%4)*50+(i%4);
   y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(10+x,214+y,50,50,this.imagePath+"bcf.png"));
+  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"bcf.png"));
   i++;
   x=(i%4)*50+(i%4);
   y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(10+x,214+y,50,50,this.imagePath+"bcfr.png"));
+  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"bcfr.png"));
   i++;
   x=(i%4)*50+(i%4);
   y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(10+x,214+y,50,50,this.imagePath+"wce.png"));
+  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"wce.png"));
   i++;
   x=(i%4)*50+(i%4);
   y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(10+x,214+y,50,50,this.imagePath+"wcer.png"));
+  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"wcer.png"));
   i++;
   x=(i%4)*50+(i%4);
   y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(10+x,214+y,50,50,this.imagePath+"wcf.png"));
+  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"wcf.png"));
   i++;
   x=(i%4)*50+(i%4);
   y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(10+x,214+y,50,50,this.imagePath+"wcfr.png"));
+  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"wcfr.png"));
   i++;
   x=(i%4)*50+(i%4);
   y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(10+x,214+y,50,50,this.imagePath+"bse.png"));
+  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"bse.png"));
   i++;
   x=(i%4)*50+(i%4);
   y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(10+x,214+y,50,50,this.imagePath+"bser.png"));
+  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"bser.png"));
   i++;
   x=(i%4)*50+(i%4);
   y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(10+x,214+y,50,50,this.imagePath+"bsf.png"));
+  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"bsf.png"));
   i++;
   x=(i%4)*50+(i%4);
   y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(10+x,214+y,50,50,this.imagePath+"bsfr.png"));
+  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"bsfr.png"));
   i++;
   x=(i%4)*50+(i%4);
   y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(10+x,214+y,50,50,this.imagePath+"wse.png"));
+  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"wse.png"));
   i++;
   x=(i%4)*50+(i%4);
   y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(10+x,214+y,50,50,this.imagePath+"wser.png"));
+  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"wser.png"));
   i++;
   x=(i%4)*50+(i%4);
   y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(10+x,214+y,50,50,this.imagePath+"wsf.png"));
+  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"wsf.png"));
   i++;
   x=(i%4)*50+(i%4);
   y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(10+x,214+y,50,50,this.imagePath+"wsfr.png"));
+  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"wsfr.png"));
   i++;
 
   this.selectedToken=-1;
   this.selection=new Token(-50,-50,50,50,this.imagePath+"selection.png");
   this.selection.draw();
 
-  this.board.draw(10,10);
+  this.board.draw(5,5);
  }
 
  onTileClick(x,y)
  {
   if(this.selectedToken!=-1)
   {
-   this.board.tokens[this.selectedToken].x=this.board.board[y][x].x+10;
-   this.board.tokens[this.selectedToken].y=this.board.board[y][x].y+10;
+   this.board.tokens[this.selectedToken].x=this.board.board[y][x].x+5;
+   this.board.tokens[this.selectedToken].y=this.board.board[y][x].y+5;
    this.selectedToken=-1;
    this.selection.x=-this.selection.width;
    this.selection.y=-this.selection.height;
    this.selection.draw();
-   this.board.draw(10,10);
+   this.board.draw(5,5);
   }
  }
 
