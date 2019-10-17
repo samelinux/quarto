@@ -1,6 +1,6 @@
 # Quarto
 
-Play Quarto on the web, head to [this repo webpage](https://samelinux.github.io/quarto/) to try it out
+Play Quarto on the web, head to [this repo webpage](https://samelinux.github.io/quarto/) to try it out.
 
 ## Description
 
@@ -13,7 +13,7 @@ This is a game for two players. The board has 16 squares (4x4), and 16 different
 * Shape (circle/ square)
 * Hole (piece with hole/piece without hole)
 
-For our 2D version we use ringed/unringed instaed of big/small just to hopefully ease pieces characteristics differentiation
+For our 2D version we use ringed/unringed instaed of big/small just to, hopefully, ease pieces characteristics differentiation.
 
 ## Objective
 
@@ -29,7 +29,15 @@ So, each turn consists of two actions:
 1. Place on the board the piece given by the opponent.
 2. Give to the opponent a new piece to be placed in the next move.
 
-## Final
+On the first turn of the game, the starting player has no piece to place so he/she just choose the piece the other player has to place.
+
+## Caveat
 
 The game finishes in a draw when nobody reaches the objective after placing the 16 pieces.
+
+## UI/UX
+
+To choose a piece, just click it and let the other player place it.
+This versione of quarto has no coded rules [as of 17/Oct/2019] so you can choose a piece that's already on the board and move it to another square.
+It's basically an hotseat game that you can easly play on a cellphone, maybe i'll add player and rules handling in the next future.
 
