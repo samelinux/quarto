@@ -10,8 +10,8 @@ class Game
   var y=0;
   this.imagePath="./images/";
   this.boardSize=4;
-  this.tileSize=40;
-  this.tokenSize=40;
+  this.tileSize=45;
+  this.tokenSize=45;
   this.border=5;
   this.board=new Board(this.boardSize,this.boardSize,
     this.tileSize,this.tileSize);
