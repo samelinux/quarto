@@ -9,91 +9,162 @@ class Game
   var x=0;
   var y=0;
   this.imagePath="./images/";
-  this.board=new Board(4,4,50,50);
+  this.boardSize=4;
+  this.tileSize=40;
+  this.tokenSize=40;
+  this.border=5;
+  this.board=new Board(this.boardSize,this.boardSize,
+    this.tileSize,this.tileSize);
 
-  x=(i%4)*50+(i%4);
-  y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"bce.png"));
+  x=(i%4)*this.tokenSize+(i%4);
+  x+=this.border;
+  y=((i/4)|0)*this.tokenSize+((i/4)|0);
+  y+=this.border+this.boardSize*this.tileSize+this.boardSize;
+  this.board.addToken(new Token(x,y,
+     this.tokenSize,this.tokenSize,
+     this.imagePath+"bce.png"));
   i++;
-  x=(i%4)*50+(i%4);
-  y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"bcer.png"));
+  x=(i%4)*this.tokenSize+(i%4);
+  x+=this.border;
+  y=((i/4)|0)*this.tokenSize+((i/4)|0);
+  y+=this.border+this.boardSize*this.tileSize+this.boardSize;
+  this.board.addToken(new Token(x,y,
+     this.tokenSize,this.tokenSize,
+     this.imagePath+"bcer.png"));
   i++;
-  x=(i%4)*50+(i%4);
-  y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"bcf.png"));
+  x=(i%4)*this.tokenSize+(i%4);
+  x+=this.border;
+  y=((i/4)|0)*this.tokenSize+((i/4)|0);
+  y+=this.border+this.boardSize*this.tileSize+this.boardSize;
+  this.board.addToken(new Token(x,y,
+     this.tokenSize,this.tokenSize,
+     this.imagePath+"bcf.png"));
   i++;
-  x=(i%4)*50+(i%4);
-  y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"bcfr.png"));
+  x=(i%4)*this.tokenSize+(i%4);
+  x+=this.border;
+  y=((i/4)|0)*this.tokenSize+((i/4)|0);
+  y+=this.border+this.boardSize*this.tileSize+this.boardSize;
+  this.board.addToken(new Token(x,y,
+     this.tokenSize,this.tokenSize,
+     this.imagePath+"bcfr.png"));
   i++;
-  x=(i%4)*50+(i%4);
-  y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"wce.png"));
+  x=(i%4)*this.tokenSize+(i%4);
+  x+=this.border;
+  y=((i/4)|0)*this.tokenSize+((i/4)|0);
+  y+=this.border+this.boardSize*this.tileSize+this.boardSize;
+  this.board.addToken(new Token(x,y,
+     this.tokenSize,this.tokenSize,
+     this.imagePath+"wce.png"));
   i++;
-  x=(i%4)*50+(i%4);
-  y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"wcer.png"));
+  x=(i%4)*this.tokenSize+(i%4);
+  x+=this.border;
+  y=((i/4)|0)*this.tokenSize+((i/4)|0);
+  y+=this.border+this.boardSize*this.tileSize+this.boardSize;
+  this.board.addToken(new Token(x,y,
+     this.tokenSize,this.tokenSize,
+     this.imagePath+"wcer.png"));
   i++;
-  x=(i%4)*50+(i%4);
-  y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"wcf.png"));
+  x=(i%4)*this.tokenSize+(i%4);
+  x+=this.border;
+  y=((i/4)|0)*this.tokenSize+((i/4)|0);
+  y+=this.border+this.boardSize*this.tileSize+this.boardSize;
+  this.board.addToken(new Token(x,y,
+     this.tokenSize,this.tokenSize,
+     this.imagePath+"wcf.png"));
   i++;
-  x=(i%4)*50+(i%4);
-  y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"wcfr.png"));
+  x=(i%4)*this.tokenSize+(i%4);
+  x+=this.border;
+  y=((i/4)|0)*this.tokenSize+((i/4)|0);
+  y+=this.border+this.boardSize*this.tileSize+this.boardSize;
+  this.board.addToken(new Token(x,y,
+     this.tokenSize,this.tokenSize,
+     this.imagePath+"wcfr.png"));
   i++;
-  x=(i%4)*50+(i%4);
-  y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"bse.png"));
+  x=(i%4)*this.tokenSize+(i%4);
+  x+=this.border;
+  y=((i/4)|0)*this.tokenSize+((i/4)|0);
+  y+=this.border+this.boardSize*this.tileSize+this.boardSize;
+  this.board.addToken(new Token(x,y,
+     this.tokenSize,this.tokenSize,
+     this.imagePath+"bse.png"));
   i++;
-  x=(i%4)*50+(i%4);
-  y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"bser.png"));
+  x=(i%4)*this.tokenSize+(i%4);
+  x+=this.border;
+  y=((i/4)|0)*this.tokenSize+((i/4)|0);
+  y+=this.border+this.boardSize*this.tileSize+this.boardSize;
+  this.board.addToken(new Token(x,y,
+     this.tokenSize,this.tokenSize,
+     this.imagePath+"bser.png"));
   i++;
-  x=(i%4)*50+(i%4);
-  y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"bsf.png"));
+  x=(i%4)*this.tokenSize+(i%4);
+  x+=this.border;
+  y=((i/4)|0)*this.tokenSize+((i/4)|0);
+  y+=this.border+this.boardSize*this.tileSize+this.boardSize;
+  this.board.addToken(new Token(x,y,
+     this.tokenSize,this.tokenSize,
+     this.imagePath+"bsf.png"));
   i++;
-  x=(i%4)*50+(i%4);
-  y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"bsfr.png"));
+  x=(i%4)*this.tokenSize+(i%4);
+  x+=this.border;
+  y=((i/4)|0)*this.tokenSize+((i/4)|0);
+  y+=this.border+this.boardSize*this.tileSize+this.boardSize;
+  this.board.addToken(new Token(x,y,
+     this.tokenSize,this.tokenSize,
+     this.imagePath+"bsfr.png"));
   i++;
-  x=(i%4)*50+(i%4);
-  y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"wse.png"));
+  x=(i%4)*this.tokenSize+(i%4);
+  x+=this.border;
+  y=((i/4)|0)*this.tokenSize+((i/4)|0);
+  y+=this.border+this.boardSize*this.tileSize+this.boardSize;
+  this.board.addToken(new Token(x,y,
+     this.tokenSize,this.tokenSize,
+     this.imagePath+"wse.png"));
   i++;
-  x=(i%4)*50+(i%4);
-  y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"wser.png"));
+  x=(i%4)*this.tokenSize+(i%4);
+  x+=this.border;
+  y=((i/4)|0)*this.tokenSize+((i/4)|0);
+  y+=this.border+this.boardSize*this.tileSize+this.boardSize;
+  this.board.addToken(new Token(x,y,
+     this.tokenSize,this.tokenSize,
+     this.imagePath+"wser.png"));
   i++;
-  x=(i%4)*50+(i%4);
-  y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"wsf.png"));
+  x=(i%4)*this.tokenSize+(i%4);
+  x+=this.border;
+  y=((i/4)|0)*this.tokenSize+((i/4)|0);
+  y+=this.border+this.boardSize*this.tileSize+this.boardSize;
+  this.board.addToken(new Token(x,y,
+     this.tokenSize,this.tokenSize,
+     this.imagePath+"wsf.png"));
   i++;
-  x=(i%4)*50+(i%4);
-  y=((i/4)|0)*50+((i/4)|0);
-  this.board.addToken(new Token(5+x,214+y,50,50,this.imagePath+"wsfr.png"));
+  x=(i%4)*this.tokenSize+(i%4);
+  x+=this.border;
+  y=((i/4)|0)*this.tokenSize+((i/4)|0);
+  y+=this.border+this.boardSize*this.tileSize+this.boardSize;
+  this.board.addToken(new Token(x,y,
+     this.tokenSize,this.tokenSize,
+     this.imagePath+"wsfr.png"));
   i++;
 
   this.selectedToken=-1;
-  this.selection=new Token(-50,-50,50,50,this.imagePath+"selection.png");
+  this.selection=new Token(-this.tokenSize,-this.tokenSize,
+    this.tokenSize,this.tokenSize,
+    this.imagePath+"selection.png");
   this.selection.draw();
 
-  this.board.draw(5,5);
+  this.board.draw(this.border,this.border);
  }
 
  onTileClick(x,y)
  {
   if(this.selectedToken!=-1)
   {
-   this.board.tokens[this.selectedToken].x=this.board.board[y][x].x+5;
-   this.board.tokens[this.selectedToken].y=this.board.board[y][x].y+5;
+   this.board.tokens[this.selectedToken].x=this.board.board[y][x].x+this.border;
+   this.board.tokens[this.selectedToken].y=this.board.board[y][x].y+this.border;
    this.selectedToken=-1;
    this.selection.x=-this.selection.width;
    this.selection.y=-this.selection.height;
    this.selection.draw();
-   this.board.draw(5,5);
+   this.board.draw(this.border,this.border);
   }
  }
 
