@@ -8,7 +8,7 @@ class Game
   var i=0;
   var x=0;
   var y=0;
-  this.imagePath="./";
+  this.imagePath="./images/";
   this.board=new Board(4,4,50,50);
 
   x=(i%4)*50+(i%4);
