@@ -1,13 +1,24 @@
 <html>
- <meta name="viewport" content="user-scalable=no,width=223,height=427">
+ <meta id="viewport" name="viewport"
+  content="user-scalable=no,width=223,height=427">
  <head>
   <script type="text/javascript" src="board.js"></script>
   <script type="text/javascript" src="game.js"></script>
  </head>
  <body id="body">
+  <div id="rules"
+   style="position:absolute;
+    overflow:auto;
+    background:#cacaca;
+    display:none;">
+  </div>
+  <div id="win"
+   style="position:absolute;
+    background:white;
+    text-align:center;
+    display:none;">The winner is:</div>
  </body>
 </html>
 <script>
 var game=new Game();
-game.start();
 </script>
